@@ -6,9 +6,9 @@ pipeline {
     stages {
         stage('Compile') {
             steps{
-                echo "${WORKSPACE}"
+                echo '${WORKSPACE}'
                 script{
-                    infincompile.compile "${WORKSPACE}"
+                    infincompile.compile '${WORKSPACE}'
                 }
             }    
         }
