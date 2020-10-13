@@ -1,5 +1,5 @@
 pipeline {
-    agent all
+    agent any
     environment {
         NEXUS_HOST = 'nexus:8081'
     }
