@@ -9,7 +9,6 @@ pipeline {
                 script{
                     infincompile.compile()
                 }
-                sh 'cat maven.output'    
             }    
         }
         stage('unit tests') {
