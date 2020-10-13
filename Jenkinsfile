@@ -8,6 +8,7 @@ pipeline {
             steps{
                 echo "${WORKSPACE}"
                 script{
+                    infincompile.version()
                     infincompile.compile "${WORKSPACE}"
                 }
             }    
