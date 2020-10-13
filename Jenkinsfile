@@ -5,8 +5,10 @@ pipeline {
     }
     stages {
         stage('Compile') {
-            infincompile.compile()
-         }
+            steps{
+                infincompile.compile()
+            }    
+        }
         stage('unit tests') {
             steps {
                 echo 'unit tests'
