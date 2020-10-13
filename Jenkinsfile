@@ -9,7 +9,7 @@ pipeline {
                 script{
                     infincompile.compile()
                 }
-                sh 'ls target/classes/de/awacademy/springbootwebblog/controllers'    
+                sh 'sleep 30'    
             }    
         }
         stage('unit tests') {
