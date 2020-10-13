@@ -8,7 +8,8 @@ pipeline {
             steps{
                 script{
                     infincompile.compile()
-                }    
+                }
+                sh 'ls target/de/awacademy/springbootwebblog/controllers'    
             }    
         }
         stage('unit tests') {
