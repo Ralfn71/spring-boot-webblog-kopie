@@ -4,6 +4,9 @@ pipeline {
         NEXUS_HOST = 'nexus:8081'
     }
     stages {
+        stage('Compile') {
+            infincompile.compile()
+         }
         stage('unit tests') {
             steps {
                 echo 'unit tests'
