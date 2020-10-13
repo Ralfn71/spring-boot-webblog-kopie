@@ -6,9 +6,9 @@ pipeline {
     stages {
         stage('Compile') {
             steps{
-                echo 'Webhook?'
+                echo "${WORKSPACE}"
                 script{
-                    infincompile.compile()
+                    infincompile.compile "${WORKSPACE}"
                 }
             }    
         }
