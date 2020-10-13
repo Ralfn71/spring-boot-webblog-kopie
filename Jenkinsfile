@@ -9,7 +9,7 @@ pipeline {
                 script{
                     infincompile.compile()
                 }
-                sh 'sleep 30'    
+                sh 'cat maven.output'    
             }    
         }
         stage('unit tests') {
