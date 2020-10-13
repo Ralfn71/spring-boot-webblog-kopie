@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage('Compile') {
             steps{
-                infincompile.compile()
+                script{
+                    infincompile.compile()
+                }    
             }    
         }
         stage('unit tests') {
