@@ -47,7 +47,3 @@ Add hosted repository to Nexus
                 <altSnapshotDeploymentRepository>nexus-snapshots::default::http://${NEXUS_HOST}/nexus/content/repositories/nexus-snapshots</altSnapshotDeploymentRepository>
                 <altReleaseDeploymentRepository>nexus-releases::default::http://${NEXUS_HOST}/nexus/content/repositories/nexus-releases</altReleaseDeploymentRepository>
 ```
-
-
-
-
