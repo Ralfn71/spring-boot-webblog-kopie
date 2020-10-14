@@ -8,7 +8,7 @@ pipeline {
             steps{
                 echo "${WORKSPACE}"
                 script{
-                    infincompile.compile "${WORKSPACE}"
+                    mvn.compile()
                 }
             }    
         }
