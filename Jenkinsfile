@@ -8,7 +8,8 @@ pipeline {
             steps{
                 echo "${WORKSPACE}"
                 script{
-                    mvn.compile([flag:" -f ", pompath: "${WORKSPACE}"])
+                    //mvn.compile([flag:" -f ", pompath: "${WORKSPACE}"])
+                    mvn.compile()
                 }
             }    
         }
